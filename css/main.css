@@ -59,11 +59,27 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .hero-btn {
@@ -531,7 +547,7 @@ body {
   margin-bottom: 30px;
 }
 
-.features-section {
+/* .features-section {
   background: #ffffff;
 }
 
@@ -551,10 +567,10 @@ body {
 
 .features__item {
   margin-right: 30px;
-}
 
-.features__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .features__wrapper {
@@ -591,7 +607,7 @@ body {
   color: var(--secondary-color);
   margin-top: 0;
 }
-
+ */
 .projects-section {
   background: #ffffff;
 }
