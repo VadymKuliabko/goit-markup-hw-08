@@ -3,20 +3,16 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-contacts {
-  display: block;
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .footer-logo {
-  display: inline-block;
-  margin-right: 0px;
   text-decoration: none;
 }
 
@@ -38,13 +34,8 @@
   margin-top: 20px;
 }
 
-.address {
-  display: inline-block;
-}
-
 .address__link-item {
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .address__link {
@@ -63,7 +54,12 @@
   }
 }
 
+.footer-social {
+  margin-bottom: 60px;
+}
+
 .footer-social__text {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -74,11 +70,11 @@
 }
 
 .subscription {
-  margin-left: 93px;
+  text-align: center;
 }
 
 .subscription__text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -87,14 +83,9 @@
   margin-bottom: 20px;
 }
 
-.footer-form {
-  display: flex;
-  align-items: center;
-}
-
 .footer-form__email {
-  width: 358px;
-  margin-right: 12px;
+  width: 450px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -110,5 +101,69 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-contacts {
+    display: block;
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-right: 0px;
+  }
+
+  .footer-social {
+    margin-right: 93px;
+  }
+
+  .subscription {
+    text-align: left;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .footer-form__email {
+    width: 358px;
+    margin-right: 12px;
   }
 }
