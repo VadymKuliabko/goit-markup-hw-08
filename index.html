@@ -23,44 +23,103 @@
       <div class="header__container container">
         <nav class="navigation">
           <a class="logo-link" href="./index.html"
-            ><span class="logo-link__web">Web</span
-            ><span class="logo-link__studio">Studio</span></a
+            ><span class="logo-link_web">Web</span
+            ><span class="logo-link_studio">Studio</span></a
           >
           <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a class="site-nav__link link current" href="./index.html"
+            <li class="site-nav_item">
+              <a class="site-nav_link link current" href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="./portfolio.html"
+            <li class="site-nav_item">
+              <a class="site-nav_link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="#">Контакты</a>
+            <li class="site-nav_item">
+              <a class="site-nav_link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn_icon">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
 
         <ul class="contact list">
-          <li class="contact__item">
-            <a class="contact__link link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon-envelope" width="16" height="12">
+          <li class="contact_item">
+            <a class="contact_link link" href="mailto:info@devstudio.com">
+              <svg class="contact_icon-envelope" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contact__item">
-            <a class="contact__link link" href="tel:+380961111111">
-              <svg class="contact__icon-smartphone" width="10" height="16">
+          <li class="contact_item">
+            <a class="contact_link link" href="tel:+380961111111">
+              <svg class="contact_icon-smartphone" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 (096) 111-11-11</a
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu_container">
+          <button class="close-btn mobile-menu_close-btn" data-menu-close>
+            <svg class="close-btn_icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list list">
+            <li class="nav-list_item">
+              <a href="./index.html" class="nav-list_link link current"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-list_item">
+              <a href="./portfolio.html" class="nav-list_link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list_item">
+              <a href="#" class="nav-list_link link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contact list">
+            <li class="mobile-contact_item">
+              <a href="tel:+380961111111" class="mobile-contact_link-tel link"
+                >+38 096 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contact_item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-contact_link-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social list">
+            <li class="mobile-social_item">
+              <a href="#" class="mobile-social_link link">Instagram</a>
+            </li>
+            <li class="mobile-social_item">
+              <a href="#" class="mobile-social_link link">Twitter</a>
+            </li>
+            <li class="mobile-social_item">
+              <a href="#" class="mobile-social_link link">Facebook</a>
+            </li>
+            <li class="mobile-social_item">
+              <a href="#" class="mobile-social_link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -161,6 +220,7 @@
                       ./images/projects-img/sitelayout.webp    1x,
                       ./images/projects-img/sitelayout@2x.webp 2x
                     "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 1200px)"
@@ -189,6 +249,7 @@
                       ./images/projects-img/mobiledesign.webp 1x,
                       ./images/projects-img/mobiledesign.webp 2x
                     "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 1200px)"
@@ -217,6 +278,7 @@
                       ./images/projects-img/rastergraphics.webp    1x,
                       ./images/projects-img/rastergraphics@2x.webp 2x
                     "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 1200px)"
@@ -254,6 +316,7 @@
                     ./images/team/igordemianenko-desktop.webp    1x,
                     ./images/team/igordemianenko-desktop@2x.webp 2x
                   "
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
@@ -268,6 +331,7 @@
                     ./images/team/igordemianenko-tablet.webp    1x,
                     ./images/team/igordemianenko-tablet@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -284,6 +348,7 @@
                     ./images/team/igordemianenko-tel.webp    1x,
                     ./images/team/igordemianenko-tel@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -340,6 +405,7 @@
                     ./images/team/olharepina-desktop.webp    1x,
                     ./images/team/olharepina-desktop@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -356,6 +422,7 @@
                     ./images/team/olharepina-tablet.webp    1x,
                     ./images/team/olharepina-tablet@2x.webp 2x
                   "
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 768px )"
@@ -370,6 +437,7 @@
                     ./images/team/olharepina-tel.webp    1x,
                     ./images/team/olharepina-tel@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -425,6 +493,7 @@
                     ./images/team/nikolaytarasov-desktop.webp    1x,
                     ./images/team/nikolaytarasov-desktop@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -440,6 +509,7 @@
                     ./images/team/nikolaytarasov-tablet.webp    1x,
                     ./images/team/nikolaytarasov-tablet@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -455,6 +525,7 @@
                     ./images/team/nikolaytarasov-tel.webp    1x,
                     ./images/team/nikolaytarasov-tel@2x.webp 2x
                   "
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 320px )"
@@ -509,6 +580,7 @@
                     ./images/team/michailermakov-desktop.webp    1x,
                     ./images/team/michailermakov-desktop@2x.webp 2x
                   "
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px )"
@@ -523,6 +595,7 @@
                     ./images/team/michailermakov-tablet.webp    1x,
                     ./images/team/michailermakov-tablet@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -538,6 +611,7 @@
                     ./images/team/michailermakov-tel.webp    1x,
                     ./images/team/michailermakov-tel@2x.webp 2x
                   "
+                  type="image/webp"
                 />
 
                 <source
@@ -728,7 +802,7 @@
 
     <!--Backdrop-->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="close-window" type="button">
           <svg
@@ -812,7 +886,8 @@
           <button type="submit" class="modal-form__button">Отправить</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
