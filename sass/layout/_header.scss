@@ -54,7 +54,7 @@
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: #ffffff;
   overflow: auto;
 
@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     margin-bottom: 302px;
     &__item {
@@ -140,7 +140,13 @@
       font-size: 34px;
       line-height: 1.17px;
       letter-spacing: 0.02em;
-      color: var(--accent-color);
+      color: var(--secondary-color);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:focus {
+        color: var(--accent-color);
+      }
     }
 
     &__link-mail {
@@ -292,6 +298,9 @@
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
+  }
+  .header__container {
+    align-items: baseline;
   }
 
   .logo-link {
