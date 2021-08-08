@@ -978,7 +978,7 @@ body {
     border-radius: 2px;
     background-color: var(--accent-color);
     display: block;
-    bottom: -48px;
+    bottom: -43px;
   }
   .contact {
     display: block;
@@ -1050,7 +1050,6 @@ body {
   }
   .contact {
     display: flex;
-    align-items: center;
   }
   .contact__item {
     margin-right: 30px;
