@@ -66,6 +66,9 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 
   .features__wrapper {
