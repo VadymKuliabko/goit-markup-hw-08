@@ -1900,6 +1900,10 @@ body {
   overflow: hidden;
 }
 
+.image {
+  width: 100%;
+}
+
 .development__overlay {
   position: absolute;
   top: 0;
