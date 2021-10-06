@@ -1297,9 +1297,6 @@ body {
   .features__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
-  .features__item:nth-child(even) {
-    margin-right: 0;
-  }
   .features__wrapper {
     width: 354px;
   }
